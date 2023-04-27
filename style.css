@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'chalkFont';
+  src: url(fonts/Chalk-y\ Sans.otf) format('opentype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.experience{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.experience-canvas{
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  position:fixed;
+  font-size: calc(2vh + 2vw);
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info{
+  position:fixed;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: calc(1vh + 1vw);
+}
+
+.gitHolder{
+  position:fixed;
+  text-align: center;
+  height: 8vh;
+  width: 100%;
+  max-width: 18vw;
+  top: 49%;
+  left: 59.8%;
+  transform: rotate(2deg);
+  font-size: calc(1vh + 1vw);
+  display: none;
+}
+
+.fullScreen{
+  font-family: 'chalkFont', sans-serif;
+  position:fixed;
+  color: rgb(198, 198, 198);
+  text-align: left;
+  width: 100%;
+  background-color: rgb(25, 58, 37);
+  height: 42vh;
+  max-width: 64.3vw;
+  overflow-y: scroll;
+  top: 3.5%;
+  left: 51.9%;
+  transform: translateX(-50%);
+  font-size: calc(1.5vh + 1.5vw);
+  display: none;
+}
+
+a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.right{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+  top: 93%;
+  left: 93%;
+  transform: translateX(-50%);
+}
+
+.right button{
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: calc(1vh + 1vw);
+}
