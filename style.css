@@ -46,14 +46,12 @@
 
 .gitHolder{
   position:fixed;
-  text-align: center;
   height: 8vh;
-  width: 100%;
-  max-width: 18vw;
-  top: 49%;
-  left: 59.8%;
-  transform: rotate(2deg);
-  font-size: calc(1vh + 1vw);
+  width: 35vh;
+  /* max-width: 30vh; */
+  top: 50%;
+  left: 50%;
+  transform: translateX(calc(50% + 3vh)) rotate(2deg) translateY(calc(50% - 5vh));
   display: none;
 }
 
@@ -82,8 +80,9 @@
   height: 8vh;
   width: 9vh;
   max-width: 9vh;
-  top: 55.8%;
-  left: 84%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(calc(50% + 61vh)) translateY(calc(50% + 2vh));
   display: none;
 }
 .leverHolder:hover {
@@ -115,16 +114,26 @@ a {
 .right{
   position: fixed;
   text-align: center;
-  width: 100%;
+  width: 7vh;
+  height: 4vh;
   max-width: 560px;
-  top: 93%;
-  left: 93%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translateX(calc(50% + 65vh)) translateY(calc(50% + 30vh));
 }
 
 .right button{
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
   border: none;
-  color: white;
-  font-size: calc(1vh + 1vw);
+}
+
+.right button:hover{
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.right:hover{
+  cursor: pointer;
 }

@@ -104,7 +104,17 @@ export default class Room{
 
     displayChalk(){
         console.log("hello");
+        //Lever open - cylinder077
         this.wind = this.mixer.clipAction(this.room.animations[226]);
+        this.wind.setLoop(THREE.LoopOnce);
+        this.wind.clampWhenFinished = true;
+        this.wind.play();
+        //Chalk text - text007
+        this.wind = this.mixer.clipAction(this.room.animations[231]);
+        this.wind.setLoop(THREE.LoopOnce);
+        this.wind.clampWhenFinished = true;
+        this.wind.play();
+        this.wind = this.mixer.clipAction(this.room.animations[232]);
         this.wind.setLoop(THREE.LoopOnce);
         this.wind.clampWhenFinished = true;
         this.wind.play();
@@ -123,9 +133,9 @@ export default class Room{
             if (this.time.i < 150){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 150 && this.time.i < 280){
+            }else if (this.time.i >= 150 && this.time.i < 278){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 280 && this.time.i < 500){
+            }else if (this.time.i >= 278 && this.time.i < 500){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 500){
@@ -135,21 +145,21 @@ export default class Room{
             else if (this.time.i >= 500 && this.time.i < 650){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 650 && this.time.i < 753){
+            }else if (this.time.i >= 650 && this.time.i < 751){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 753 && this.time.i < 1000){
+            }else if (this.time.i >= 751 && this.time.i < 1000){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 1000){
                 this.inc = 0.03;
             }
 
-            else if (this.time.i >= 1000 && this.time.i < 1150){
+            else if (this.time.i >= 1000 && this.time.i < 1151){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 1150 && this.time.i < 1237){
+            }else if (this.time.i >= 1151 && this.time.i < 1233){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 1237 && this.time.i < 1500){
+            }else if (this.time.i >= 1233 && this.time.i < 1500){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 1500){
@@ -159,9 +169,9 @@ export default class Room{
             else if (this.time.i >= 1500 && this.time.i < 1650){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 1650 && this.time.i < 1727){
+            }else if (this.time.i >= 1650 && this.time.i < 1723){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 1727 && this.time.i < 2000){
+            }else if (this.time.i >= 1723 && this.time.i < 2000){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 2000){

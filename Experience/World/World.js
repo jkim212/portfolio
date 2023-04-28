@@ -34,6 +34,9 @@ export default class World{
         if (this.room){
             this.room.update();
         }
+        if (this.train){
+            this.train.update();
+        }
         if (this.controls){
             this.controls.update();
         }
@@ -42,6 +45,9 @@ export default class World{
     nextStation(){
         if (this.room){
             this.room.nextStation();
+        }
+        if (this.train){
+            this.train.update();
         }
         if (this.controls){
             this.controls.update();

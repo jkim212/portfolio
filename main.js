@@ -8,9 +8,12 @@ const infoDiv = document.querySelector('.info');
 
 const fullDiv = document.querySelector('.fullScreen');
 const githold = document.querySelector('.gitHolder');
+
+var clickCount = 1;
 // Add a click event listener to the button
 button.addEventListener("click", function () {
-  if (experience.time.stopped) {
+  if (experience.time.stopped && experience.time.finalClick === 0) {
+    experience.world.train.throttle();
     experience.time.nextStation();
     fullDiv.style.display = "none";
     githold.style.display = "none";
@@ -19,6 +22,13 @@ button.addEventListener("click", function () {
       titleDiv.innerHTML = "";
       infoDiv.innerHTML = "";
     }, 1000);
+  }
+  else if (experience.time.finalClick === 1 && clickCount === 1){
+    infoDiv.innerHTML = "No, seriously it's still in development";
+    clickCount++;
+  }
+  else if (clickCount > 1){
+    infoDiv.innerHTML = "Stop and give me an interview";
   }
 });
 
@@ -32,9 +42,9 @@ lever.addEventListener("click", function () {
   const link = document.createElement('a');
   link.href = 'https://github.com/jkim212/portfolio';
   link.target = '_blank';
-  link.textContent = 'Portfolio Webpage Project';
+  link.textContent = 'Portfolio WebApp Project';
   fullDiv.appendChild(link);
-  fullDiv.innerHTML += " <- Click to visit\
+  fullDiv.innerHTML += " <- Click titles to visit\
                 <br>With a combined usage of Blender and Three.js along with html/css/js skills learned at\
                 Seneca College, I am currently developing this very webpage to build on my portfolio\
                 and also to display other projects from my Github<br><br>";
@@ -59,7 +69,7 @@ lever.addEventListener("click", function () {
                 introducing a card game of my choice, Blackjack. As this was an introductory course to\
                 html/css/js, it focuses on basic usage of html elements and tags, controlling format with\
                 css, and dynamically creating/rearranging/deleting elements using js. This project got me\
-                very interested in javascript language.<br><br>";
+                very interested in the javascript language.<br><br>";
 
               }, 1000);
 });
