@@ -37,7 +37,7 @@
   color: white;
   text-align: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -57,22 +57,54 @@
   display: none;
 }
 
+
 .fullScreen{
   font-family: 'chalkFont', sans-serif;
   position:fixed;
   color: rgb(198, 198, 198);
   text-align: left;
-  width: 100%;
+  width: 123.1vh;
   background-color: rgb(25, 58, 37);
   height: 42vh;
-  max-width: 64.3vw;
+  max-width: 123.1vh;
   overflow-y: scroll;
   top: 3.5%;
-  left: 51.9%;
+  left: 52%;
   transform: translateX(-50%);
-  font-size: calc(1.5vh + 1.5vw);
+  font-size: calc(5vh);
+  display: none;
+  padding: 30px;
+}
+
+.leverHolder{
+  position:fixed;
+  text-align: center;
+  height: 8vh;
+  width: 9vh;
+  max-width: 9vh;
+  top: 55.8%;
+  left: 84%;
   display: none;
 }
+.leverHolder:hover {
+  cursor: pointer;
+}
+/* 
+.slideInFromRight {
+  animation: slideIn 2.8s ease-out forwards;
+  transition-timing-function: linear, linear, cubic-bezier(0,0,.58,1);
+  transform: translateX(75%);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(75%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+  
+} */
 
 a {
   font-weight: bold;

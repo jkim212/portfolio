@@ -11,6 +11,7 @@ export default class Room{
         this.actualRoom = this.room.scene;
         this.inc = 0.03;
 
+        this.mixer = new THREE.AnimationMixer(this.actualRoom);
         this.setModel();
         this.setAnimation();
 
@@ -76,7 +77,6 @@ export default class Room{
     }
 
     setAnimation(){
-        this.mixer = new THREE.AnimationMixer(this.actualRoom);
         console.log(this.room.animations);
         //trees
         for (var i = 167; i < 172; i++){
@@ -99,11 +99,15 @@ export default class Room{
         //this.wind.setLoop(THREE.LoopOnce);
         this.wind.play();
         //lever - cylinder077
+
+    }
+
+    displayChalk(){
+        console.log("hello");
         this.wind = this.mixer.clipAction(this.room.animations[226]);
-        //this.wind.setLoop(THREE.LoopOnce);
+        this.wind.setLoop(THREE.LoopOnce);
+        this.wind.clampWhenFinished = true;
         this.wind.play();
-
-
     }
 
     resize(){
@@ -119,9 +123,9 @@ export default class Room{
             if (this.time.i < 150){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 150 && this.time.i < 283){
+            }else if (this.time.i >= 150 && this.time.i < 280){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 283 && this.time.i < 500){
+            }else if (this.time.i >= 280 && this.time.i < 500){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 500){
@@ -131,9 +135,9 @@ export default class Room{
             else if (this.time.i >= 500 && this.time.i < 650){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 650 && this.time.i < 754){
+            }else if (this.time.i >= 650 && this.time.i < 753){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 754 && this.time.i < 1000){
+            }else if (this.time.i >= 753 && this.time.i < 1000){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 1000){
@@ -143,9 +147,9 @@ export default class Room{
             else if (this.time.i >= 1000 && this.time.i < 1150){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 1150 && this.time.i < 1239){
+            }else if (this.time.i >= 1150 && this.time.i < 1237){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 1239 && this.time.i < 1500){
+            }else if (this.time.i >= 1237 && this.time.i < 1500){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 1500){
