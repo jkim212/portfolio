@@ -79,23 +79,23 @@ export default class Room{
     setAnimation(){
         console.log(this.room.animations);
         //trees
-        for (var i = 167; i < 172; i++){
+        for (var i = 166; i < 171; i++){
             this.wind = this.mixer.clipAction(this.room.animations[i]);
             //this.wind.setLoop(THREE.LoopOnce);
             this.wind.play();
         }
         //factory
-        for (var i = 211; i < 215; i++){
+        for (var i = 210; i < 214; i++){
             this.wind = this.mixer.clipAction(this.room.animations[i]);
             //this.wind.setLoop(THREE.LoopOnce);
             this.wind.play();
         }
         //thinker - sphere 042
-        this.statue = this.mixer.clipAction(this.room.animations[207]);
+        this.statue = this.mixer.clipAction(this.room.animations[206]);
         //this.wind.setLoop(THREE.LoopOnce);
         this.statue.play();
         
-        this.wind = this.mixer.clipAction(this.room.animations[218]);
+        this.wind = this.mixer.clipAction(this.room.animations[217]);
         //this.wind.setLoop(THREE.LoopOnce);
         this.wind.play();
         //lever - cylinder077
@@ -105,16 +105,16 @@ export default class Room{
     displayChalk(){
         console.log("hello");
         //Lever open - cylinder077
-        this.wind = this.mixer.clipAction(this.room.animations[226]);
+        this.wind = this.mixer.clipAction(this.room.animations[225]);
         this.wind.setLoop(THREE.LoopOnce);
         this.wind.clampWhenFinished = true;
         this.wind.play();
         //Chalk text - text007
-        this.wind = this.mixer.clipAction(this.room.animations[231]);
+        this.wind = this.mixer.clipAction(this.room.animations[230]);
         this.wind.setLoop(THREE.LoopOnce);
         this.wind.clampWhenFinished = true;
         this.wind.play();
-        this.wind = this.mixer.clipAction(this.room.animations[232]);
+        this.wind = this.mixer.clipAction(this.room.animations[231]);
         this.wind.setLoop(THREE.LoopOnce);
         this.wind.clampWhenFinished = true;
         this.wind.play();
@@ -133,45 +133,45 @@ export default class Room{
             if (this.time.i < 150){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 150 && this.time.i < 278){
+            }else if (this.time.i >= 150 && this.time.i < 209){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 278 && this.time.i < 500){
+            }else if (this.time.i >= 209 && this.time.i < 500){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 500){
                 this.inc = 0.03;
             }
 
-            else if (this.time.i >= 500 && this.time.i < 650){
+            else if (this.time.i >= 500 && this.time.i < 629){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 650 && this.time.i < 751){
+            }else if (this.time.i >= 629 && this.time.i < 744){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 751 && this.time.i < 1000){
+            }else if (this.time.i >= 744 && this.time.i < 1000){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 1000){
                 this.inc = 0.03;
             }
 
-            else if (this.time.i >= 1000 && this.time.i < 1151){
+            else if (this.time.i >= 1000 && this.time.i < 1129){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 1151 && this.time.i < 1233){
+            }else if (this.time.i >= 1129 && this.time.i < 1228){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 1233 && this.time.i < 1500){
+            }else if (this.time.i >= 1228 && this.time.i < 1500){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 1500){
                 this.inc = 0.03;
             }
 
-            else if (this.time.i >= 1500 && this.time.i < 1650){
+            else if (this.time.i >= 1500 && this.time.i < 1630){
                 child.position.x -= this.inc;
                 this.inc *= 1.00007;
-            }else if (this.time.i >= 1650 && this.time.i < 1723){
+            }else if (this.time.i >= 1630 && this.time.i < 1714){
                 child.position.x -= this.inc;
-            }else if (this.time.i >= 1723 && this.time.i < 2000){
+            }else if (this.time.i >= 1714 && this.time.i < 2000){
                 child.position.x -= this.inc;
                 this.inc /= 1.00007;
             }else if (this.time.i === 2000){

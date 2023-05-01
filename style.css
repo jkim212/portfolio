@@ -137,3 +137,16 @@ a {
 .right:hover{
   cursor: pointer;
 }
+
+
+.instruc{
+  position:fixed;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  top: 93%;
+  left: 70%;
+  transform: translateX(-50%);
+  font-size: calc(1vh + 1vw);
+}

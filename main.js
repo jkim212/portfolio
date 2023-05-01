@@ -9,9 +9,13 @@ const infoDiv = document.querySelector('.info');
 const fullDiv = document.querySelector('.fullScreen');
 const githold = document.querySelector('.gitHolder');
 
+const inst = document.querySelector('.instruc');
+
 var clickCount = 1;
 // Add a click event listener to the button
 button.addEventListener("click", function () {
+  
+  inst.style.display = "none";
   if (experience.time.stopped && experience.time.finalClick === 0) {
     experience.world.train.throttle();
     experience.time.nextStation();
