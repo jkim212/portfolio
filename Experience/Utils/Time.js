@@ -63,7 +63,7 @@ export default class Time extends EventEmitter{
                 githold.style.display = "block";
             }
             if (this.i === 1001){
-                infoDiv.innerHTML = "I received my Bachelor's in Mathematics from Queen's University\
+                infoDiv.innerHTML = "I received my Bachelor's Degree in Mathematics from Queen's University\
                 and now am pursuing Computer Programming Analysis at Seneca College";
             }
             if (this.i === 1501){
@@ -71,7 +71,8 @@ export default class Time extends EventEmitter{
             }
             if (this.i === 2001){
                 this.finalClick++;
-                infoDiv.innerHTML = "This is our final destination for now. More projects and stations\
+                infoDiv.innerHTML = "This is our final station for now. This webpage will always be\
+                in development as more and more projects and stations\
                 will be added as my journey continues.<br>Stay tuned!";
             }
         }
